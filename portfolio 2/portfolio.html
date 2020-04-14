@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>甘中孝明ポートフォリオ</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/98c0ad8591.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="">プロフィール</a>
+            <a href="#portfolios">ポートフォリオ</a>
+            <a href="#services">サービス</a>
+            <a href="#contact">コンタクト</a>
+        </div>
+    </header>
+    <section class="top">
+    </section>
+    <section class="plofiele" id="plofiele">
+        <div class="container plofiele_container">
+            <h1>プロフィール</h1>
+            <img src="img/takaaki.JPG" alt="">
+            <div class="plofiele_txt">
+                <p>甘中孝明</p>
+                <p>兵庫県出身/21歳</p>
+                <p>岡山大学工学部在学</p>
+                <p>フリーランスプログラマー</p>
+                <br>
+                <p class="line">スキル</p>
+                <div class="skills">
+                    <li>
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-js-square"></i>
+                        <p>jQuery</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-server"></i>
+                        <p>SQL</p>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolios" id="portfolios">
+        <div class="container">
+            <h1>ポートフォリオ</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable1">
+                            <img src="img/isaratop.jpg" class="d-block w-100" alt="...">
+                        </button>
+                    </div>
+                    <div class="carousel-item">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable2">
+                            <img src="img/paspoltop.jpg" class="d-block w-100" alt="...">
+                        </button>
+                    </div>
+                    <div class="carousel-item">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable3">
+                            <img src="img/exetop.jpg" class="d-block w-100" alt="...">
+                        </button>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+    <div class="container services_container">
+        <h1>サービス</h1>
+        <div class="services_container_contents">
+            <h2>LP作成</h2>
+            <i class="fas fa-laptop-code icon"></i>
+            <p>デザイン案をもとにHTML/CSS/jQueryを用いて、デザインに忠実なWebサイトコーディングを行います。</p>
+        </div>
+        <div class="services_container_contents">
+            <h2>コーディング代行</h2>
+            <i class="fas fa-file-code icon"></i>
+            <p>商品の販売促進に繋がるLPを製作します。</p>
+        </div>
+        <div class="services_container_contents">
+            <h2>スマホサイズ対応</h2>
+            <i class="fas fa-mobile-alt icon"></i>
+            <p>Webサイトをスマートフォン、タブレット、PCにレスポンシブ対応いたします。</p>
+        </div>
+        
+    </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container contact_container">
+            <h1>コンタクト</h1>
+            <h3>ご連絡はこちらの公開メールアドレスへ<br><br></h3>
+            <h3>公開メールアドレス : t.kannaka@gmail.com</h3>
+        </div>
+    </section>
+    <footer>
+        <div class="container hooter_container">
+            <p><i class="far fa-copyright"></i> Takaaki Kannaka 2020</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModalScrollable1" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">iSara模写</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/isaracopy.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <p>作成日：2020年3月</p>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalScrollable2" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">PAS-POL模写</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/paspolcopy.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <p>作成日：2020年3月</p>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalScrollable3" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">exe模写</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="img/execopy.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <p>作成日：2020年3月</p>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="portfolio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body></html>
